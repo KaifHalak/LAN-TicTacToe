@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0;
+    padding:0
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:#181719;
+    font-size: 62.5%;
+}
+
+
+.board-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* ========= */
+
+
+.board-turn-msg-container{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+.turn{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.symbol{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============= */
+
+.board-score-container{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    top: 150px;
+    left: 180px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-username-style{
+    margin-right: 20px;
+}
+
+.play-again-btn{
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.play-again-btn:hover{
+    cursor: pointer;
+    background-color: #509aad;
+}
+
+/* ============= */
+
+.board-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 410px;
+}
+
+.board-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-slot-design{
+    width: 133px;
+    height: 133px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.board-slot-design:hover{
+    cursor: pointer;
+}
+
+.board-row:nth-child(-n+2) {
+    border-bottom: 5px solid white;
+}
+
+.middle-cell{
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+
+}
+
+
+/* ============= */
+
+.board-stopper{
+    pointer-events: none; 
+    opacity: 0.6;
+    cursor: not-allowed; 
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 414px){
+
+    .turn{
+        font-size: 3.5rem;
+    }
+
+    .symbol{
+        font-size: 1.5rem;
+    }
+
+
+    .board-container{
+        width: 30rem;
+        font-size: 30rem;
+    }
+
+    .board-slot-design{
+        width: 8.5rem;
+        height: 8.5rem;
+        font-size: 6rem;
+    }
+    
+    .board-score-container > *:not(:last-child){
+        display:none
+    }
+
+    .board-score-container{
+        display: block;
+        position: static;
+        padding: 0px;
+    }
+
+    .play-again-btn{
+        width: 18rem;
+        font-size: 2.5rem;
+        margin-top: 0px;
+    }
+}

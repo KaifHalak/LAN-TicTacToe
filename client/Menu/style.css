@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:#181719;
+    font-size: 62.5%;
+}
+
+
+/* ======= */
+
+.menu-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ======= */
+
+.menu-heading-container{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ======= */
+
+
+.menu-button-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}   
+
+
+.menu-btn-style{
+    width: 300px;
+    height: 100px;
+    margin: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.menu-btn-style:hover{
+    background-color: #509aad;
+    cursor: pointer;
+}
+
+/* ======= */
+
+.menu-input-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-input-data-container label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu-input-data-container .input-field-design{
+    text-align: center;
+    height: 35px;
+    width: 240px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.menu-input-data-container .btn-design{
+    width: 200px;
+    height: 40px;
+    margin: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.menu-input-data-container .btn-design:hover{
+    cursor: pointer;
+    background-color: #509aad;
+}
+
+.room-id-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-readonly{
+    background-color: #f2f2f2;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.create-room-btn-container{
+    text-align: center;
+}
+
+.create-room-text{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ======= */
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 414px){
+
+    .menu-heading-container{
+        font-size: 3.5rem;
+    }
+
+    .menu-btn-style{
+        width: 18rem;
+        font-size: 2.5rem;
+    }
+
+
+    .menu-input-data-container label{
+        display: block;
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+
+}

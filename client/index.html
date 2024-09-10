@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Menu/style.css">
+    <link rel="stylesheet" href="/Board/style.css">
+</head>
+<body>
+    
+    <div class="menu-main-container">
+
+        <div class="menu-heading-container">
+            Tic-Tac-Toe
+        </div>
+
+        <div class="menu-button-containers">
+
+            <div class="menu-create-room-btn-continaer">
+                <button class="menu-create-room-btn menu-btn-style">Create Room</button>
+            </div>
+
+            <div class="menu-join-room-btn-container">
+                <button class="menu-join-room-btn menu-btn-style">Join Room</button>
+            </div>
+
+        </div>
+
+        <div class="menu-input-data-container hide">
+            <label for="username">Username: 
+                <input type="text" id="username" class="input-field-design" spellcheck="false">
+            </label>
+
+            <div class="room-id-container hide">
+
+                <label for="room-id" class="room-id-label">Room-ID: 
+                    <input type="text" id="room-id" class="input-field-design" spellcheck="false">
+                </label>
+
+                <button class="join-room-btn btn-design">Join Room</button>
+            </div>
+
+            <div class="create-room-btn-container hide">
+                <span class="create-room-text hide">Room Created</span>
+                <br>
+                <button class="create-room-btn btn-design">Create Room</button>
+            </div>
+
+            <button class="go-back-btn btn-design">Go Back</button>
+            
+            
+        </div>
+
+
+    </div>
+
+    <div class="board-main-container hide">
+
+        <div class="board-turn-msg-container">
+            <span class="turn">Your Turn</span>
+            <br>
+            <span class="symbol">You are X</span>
+        </div>
+
+        <div class="board-container board-stopper">
+
+            <div class="board-row">
+
+                <div class="board-one board-slot-design"></div>
+
+                <div class="board-two board-slot-design middle-cell"></div>
+
+                <div class="board-three board-slot-design">
+
+                </div>
+
+            </div>
+
+            <div class="board-row">
+
+                <div class="board-four board-slot-design"></div>
+
+                <div class="board-five board-slot-design middle-cell"></div>
+
+                <div class="board-six board-slot-design">
+
+                </div>
+
+            </div>
+
+            <div class="board-row">
+
+                <div class="board-seven board-slot-design"></div>
+
+                <div class="board-eigth board-slot-design middle-cell"></div>
+
+                <div class="board-nine board-slot-design">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="board-score-container">
+
+            <div class="hide">
+
+                <span>Wins</span>
+
+                <div class="player">
+                    <span class="player1 player-username-style"></span>
+                    <span class="player1-score"></span>
+                </div>
+                
+                <div class="player">
+                    <span class="player2 player-username-style"></span></span>
+                    <span class="player2-score"></span>
+                </div>
+
+            </div>
+
+            <button class="play-again-btn hide">Play Again</button>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js" defer></script>
+<script src="/Menu/script.js" type="module" defer></script>
+<script src="/Board/script.js" defer></script>
+</html>
