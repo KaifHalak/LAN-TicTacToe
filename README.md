@@ -2,6 +2,8 @@
 
 Players can join the game from any device connected to the same network and can play against each other.
 
+![Demo Vid](demo-vid.gif)
+
 ## Features
 - Players can set their own usernames.
 - Connect and play from any device on the same network. (Note: The server must run on a computer.)
